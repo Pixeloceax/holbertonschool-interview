@@ -2,6 +2,8 @@
 """
     0-lockboxes
 """
+
+
 def canUnlockAll(boxes):
     """
         boxes: list of lists
