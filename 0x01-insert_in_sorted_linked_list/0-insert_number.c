@@ -4,8 +4,8 @@
 /**
  *insert_node - inserts a number into a sorted singly linked list.
  *@head: pointer to the head of the list
- *@number: number to insert;
- *Return: listint_t*
+ *@number: number to insert
+ *Return: listint_t.
  */
 
 listint_t *insert_node(listint_t **head, int number)
