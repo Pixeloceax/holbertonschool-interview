@@ -1,16 +1,12 @@
-/**
- * @file 0-insert_number.c
- * @author axel
- * @brief
- * @version 0.1
- * @date 2022-12-12
- *
- * @copyright Copyright (c) 2022
- *
- */
-
 #include "lists.h"
 #include <stdlib.h>
+
+/**
+ *insert_node - inserts a number into a sorted singly linked list.
+ *@head: pointer to the head of the list
+ *@number: number to insert;
+ *Return: listint_t*
+ */
 
 listint_t *insert_node(listint_t **head, int number)
 {
