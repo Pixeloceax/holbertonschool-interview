@@ -2,7 +2,7 @@
 """0x03. Minimum Operations"""
 def minOperations(n):
     """
-        Calculates the fewest number of operations needed to result in exactly n H characters in the file.
+        calc min operations to reach n  
     """
     if n <= 1:
         return 0
