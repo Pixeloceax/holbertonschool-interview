@@ -1,4 +1,5 @@
-#!/usr/bin/python3
+#!/usr/bin/python
+
 """0x03. Minimum Operations"""
 
 
@@ -6,6 +7,7 @@ def minOperations(n):
     """
         calc min operations to reach n  
     """
+
     if n <= 1:
         return 0
 
