@@ -17,4 +17,4 @@ def minOperations(n):
 			n /= index
 		else:
 			index += 1
-		return count
+	return count
