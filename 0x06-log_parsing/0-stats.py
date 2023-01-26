@@ -20,8 +20,8 @@ for line in stdin:
                 for status, count in sorted(status_codes.items()):
                     if count != 0:
                         print("{}: {}".format(status, count))
-    except KeyboardInterrupt:
-        pass
+    except ValueError:
+        raise
 
 print("File size: {}".format(total_size))
 for status, count in sorted(status_codes.items()):
