@@ -1,9 +1,9 @@
 #include "menger.h"
 
 /**
+ * menger - Draws a 2D Menger Sponge
+ * @level: Level of the Menger Sponge to draw
  *
- *
- * @param level
  */
 
 void menger(int level)
