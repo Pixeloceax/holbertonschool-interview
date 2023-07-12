@@ -7,27 +7,44 @@
 
 /* DEFINITIONS AND STRUCTS */
 /**
- * struct List - doubly linked list
- * @str: string - (malloc'ed string)
- * @prev: points to the previous node
- * @next: points to the next node
+ * struct List - Doubly linked list node
+ * @str: The string stored in the node (malloc'ed string)
+ * @prev: Pointer to the previous node
+ * @next: Pointer to the next node
  *
- * Description: doubly linked list node structure
- * for Holberton project
+ * Description: Structure for a doubly linked list node.
  */
 typedef struct List
 {
-    char *str;
-    struct List *prev;
-    struct List *next;
+	char *str;
+	struct List *prev;
+	struct List *next;
 } List;
 
-/* FUNCTION PROTOTYPES */
-/* function to determine the length of a string */
+/**
+ * string_length - Finds the length of a string.
+ * @str: The string to find the length of.
+ *
+ * Return: The length of the string as an integer.
+ */
 int string_length(char *str);
-/* function to add new node to end of a double circular linked list */
+
+/**
+ * add_node_end - Adds a new node to the end of a double circular linked list.
+ * @list: Pointer to the double circular linked list to modify.
+ * @str: The string to copy into the new node.
+ *
+ * Return: The address of the new node or NULL on failure.
+ */
 List *add_node_end(List **list, char *str);
-/* function to add new node to beginning of a double circular linked list */
+
+/**
+ * add_node_begin - Adds a new node to the start of a d2 circular linked list.
+ * @list: Pointer to the double circular linked list to modify.
+ * @str: The string to copy into the new node.
+ *
+ * Return: The address of the new node or NULL on failure.
+ */
 List *add_node_begin(List **list, char *str);
 
-#endif
+#endif /* LIST_H */
